@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 
 export const getStaticPaths = async () => {
   const res = await fetch(
-    "https://distracted-napier.185-243-11-121.plesk.page/wp-json/wp/v2/posts?"
+    "https://www.medieninformatik.de/wp-json/wp/v2/posts?"
   );
   const data = await res.json();
 
@@ -23,8 +23,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   const id = context.params.id;
   const res = await fetch(
-    "https://distracted-napier.185-243-11-121.plesk.page/wp-json/wp/v2/posts/" +
-      id
+    "https://www.medieninformatik.de/wp-json/wp/v2/posts?" + id
   );
   const data = await res.json();
 
