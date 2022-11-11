@@ -10,6 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  position: relative;
 }
 
 .posts{
@@ -19,7 +21,8 @@
   margin: 1rem 0;
   text-align: center;
   color: black;
-  border-left: 10px solid white
+  border-left: 10px solid white;
+  width: 500px;
 }
 
 .posts:hover{
