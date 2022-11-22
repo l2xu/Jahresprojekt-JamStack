@@ -1,31 +1,22 @@
-.container {
-  padding: 0 2rem;
+
+
+
+.main{
+  margin-top: 2rem;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  position: relative;
+.filter_container{
+  /* background-color: rgb(206, 219, 251); */
+  height: 100px;
+}
+.card_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
 .posts{
-  align-self: stretch;
-  padding: 0.2rem 0.4rem;
-  background-color: white;
-  margin: 1rem 0;
-  text-align: center;
-  color: black;
-  border-left: 10px solid white;
-  width: 500px;
-}
+  background-color: rgb(255, 172, 195);
+  aspect-ratio: 1/1
 
-.posts:hover{
-  border-left: 10px solid orange;
 }
-

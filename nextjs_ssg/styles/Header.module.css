@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin: 12px 0 8px;
+    width: 200px;
+}
+
+.hs{
+    font-size: 0.8rem;
+}
+
+.searchbox{
+    display: flex;
+    flex-direction: column;
+}
