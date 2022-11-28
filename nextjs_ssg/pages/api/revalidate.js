@@ -9,6 +9,7 @@ export default async function handler(req, res) {
     // e.g. for "/blog/[slug]" this should be "/blog/post-1"
 
     await res.revalidate("/");
+    await res.revalidate("/3");
 
     return res.json({ revalidated: true });
   } catch (err) {

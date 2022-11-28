@@ -8,7 +8,7 @@ app = Flask(__name__)
 def webhook():
     if request.method == 'POST':
         print("THE WEBOOK WORKED")
-        call('kill $(lsof -t -i:3000);cd nextjs_ssg; npm run build; npm run start', shell=True)
+        call('cd nextjs_ssg; npm run build; kill $(lsof -t -i:3000);npm run start', shell=True)
         return 'success', 200
     else:
         abort(400)
