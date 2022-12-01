@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 import styles from "../styles/Footer.module.css";
 
@@ -55,9 +56,17 @@ const Footer = () => {
           Powered by Wordpress • Some icons by Icons8
         </span>
         <div className={styles.socials}>
-          <span>FA</span>
-          <span>Twitter</span>
-          <span>RSS</span>
+          <a
+            href="https://www.facebook.com/profile.php?id=100057687128334"
+            target="_blank">
+            <Image src="/icons/fa.png" width="30" height="30" />
+          </a>
+          <a href="https://twitter.com/MIHSHARZ" target="_blank">
+            <Image src="/icons/twitter.png" width="30" height="30" />
+          </a>
+          <a href="https://www.medieninformatik.de/feed/" target="_blank">
+            <Image src="/icons/rss.png" width="30" height="30" />
+          </a>
         </div>
       </div>
     </footer>

@@ -1,3 +1,9 @@
+
+:root{
+  --mobile-breakpoint: 650px;
+  
+}
+
 html,
 body {
   padding: 0;
@@ -16,6 +22,9 @@ a {
 }
 
 .wrapper{
-  width: 960px;
-  margin: auto;
+  --max-width: 960px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
 }
