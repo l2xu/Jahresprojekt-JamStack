@@ -52,7 +52,7 @@ export const getStaticProps = async (path) => {
 // The Component renders the page with the correct content
 // We got the correct content from the getStaticProps function
 const Post = ({ post }) => {
-  console.log(post);
+  console.log(post[0].attributes.Titlebild.data.attributes);
   return (
     <div className={styles.container}>
       <main className={styles.main}>
