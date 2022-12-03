@@ -11,41 +11,57 @@ const Footer = () => {
         <div className={styles.col}>
           <a
             href="https://www.hs-harz.de/deutschlandstipendium/bewerber/"
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             Bewerber/innen
           </a>
-          <a href="https://www.hs-harz.de/medieninformatik" target="_blank">
+          <a
+            href="https://www.hs-harz.de/medieninformatik"
+            target="_blank"
+            rel="noreferrer">
             Infos zum Studiengang Medieninformatik (B.Sc.)
           </a>
           <a
             href="https://www.hs-harz.de/medien-und-spielekonzeption-ma"
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             Infos zum Studiengang Medien- und Spielekonzeption (M.A.)
           </a>
-          <a href="https://www.medieninformatik.de/rundgang/" target="_blank">
+          <a
+            href="https://www.medieninformatik.de/rundgang/"
+            target="_blank"
+            rel="noreferrer">
             Rundgang durch die Räumlichkeiten
           </a>
         </div>
         <div className={styles.col}>
-          <a href="https://studip.hs-harz.de/studip/" target="_blank">
+          <a
+            href="https://studip.hs-harz.de/studip/"
+            target="_blank"
+            rel="noreferrer">
             StudIP
           </a>
           <a
             href="https://auskunft2.hs-harz.de/lsf/rds?state=user&type=1"
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             LSF
           </a>
         </div>
         <div className={styles.col}>
-          <a href="https://www.hs-harz.de/" target="_blank">
+          <a href="https://www.hs-harz.de/" target="_blank" rel="noreferrer">
             ▲ Hochschule Harz
           </a>
-          <a href="https://www.medieninformatik.de/impressum/" target="_blank">
+          <a
+            href="https://www.medieninformatik.de/impressum/"
+            target="_blank"
+            rel="noreferrer">
             Impressum
           </a>
           <a
             href="https://www.medieninformatik.de/datenschutzerklaerung/"
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             Datenschutzerklärung
           </a>
         </div>
@@ -58,13 +74,20 @@ const Footer = () => {
         <div className={styles.socials}>
           <a
             href="https://www.facebook.com/profile.php?id=100057687128334"
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             <Image src="/icons/fa.png" width="30" height="30" />
           </a>
-          <a href="https://twitter.com/MIHSHARZ" target="_blank">
+          <a
+            href="https://twitter.com/MIHSHARZ"
+            target="_blank"
+            rel="noreferrer">
             <Image src="/icons/twitter.png" width="30" height="30" />
           </a>
-          <a href="https://www.medieninformatik.de/feed/" target="_blank">
+          <a
+            href="https://www.medieninformatik.de/feed/"
+            target="_blank"
+            rel="noreferrer">
             <Image src="/icons/rss.png" width="30" height="30" />
           </a>
         </div>
