@@ -5,11 +5,14 @@ import Link from "next/link";
 export const getStaticProps = async () => {
   const token =
     "ef7b5769772f2edfc916bf362fab95267ebd3b3e3c730d86c81a72030b1e587d8cb192441dbda7079449e837a0d56ee95c6e030d8a4ea0519184f9e464409cb58a67d30197154b2cf5cf1003bfb713387b8ac631a93272fed98a80f333eb1d02b85ea6469fc0792b32db3b3a3525f4700da5f7229ef6215cd0c8a72ec7e5a20c";
-  const res = await fetch("http://194.95.193.79:1337/api/tests", {
-    headers: new Headers({
-      Authorization: `Bearer ${token}`,
-    }),
-  });
+  const res = await fetch(
+    "http://194.95.193.79:1337/api/blogeintrags?populate=*",
+    {
+      headers: new Headers({
+        Authorization: `Bearer ${token}`,
+      }),
+    }
+  );
   const fetchedData = await res.json();
 
   return {
@@ -22,6 +25,7 @@ export const getStaticProps = async () => {
 
 export default function Home({ posts }) {
   console.log(posts);
+  console.log(posts[0].attributes.Titelbild.data[0].attributes.url);
   return (
     <div className={styles.container}>
       <Head>
@@ -32,17 +36,30 @@ export default function Home({ posts }) {
 
       <main className={styles.main}>
         <img src="/minff.jpg" width="100%" />
-        <div className={styles.filter_container}>
-          <span>Filter</span>
-        </div>
+
         <div className={styles.card_container}>
-          {posts.map((post) => (
-            <Link href={"/" + post.id} key={post.id}>
-              <div className={styles.posts}>
-                <h3>{post.attributes.title}</h3>
-              </div>
-            </Link>
-          ))}
+          {posts.map((post) => {
+            const imageUrl =
+              "url('http://194.95.193.79:1337" +
+              post.attributes.Titelbild.data[0].attributes.url +
+              "')";
+
+            return (
+              <Link href={"/" + post.id} key={post.id}>
+                <div
+                  className={styles.posts}
+                  style={{
+                    backgroundImage: imageUrl,
+                    backgroundSize: "cover",
+                  }}>
+                  <div className={styles.bottomContainer}>
+                    <h3>{post.attributes.Titel}</h3>
+                    <span>{post.attributes.publishedAt}</span>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </main>
     </div>
