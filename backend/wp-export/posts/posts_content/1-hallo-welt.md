@@ -1,0 +1,1 @@
+"---\ntitle:      [object Object]\nslug:       hallo-welt\ndate:       2022-11-16T15:54:58.000Z\nstatus:     publish\npublished:  2022-11-16T15:54:58.000Z\n---\n\nWillkommen bei WordPress. Dies ist dein erster Beitrag. Bearbeite oder lösche ihn und beginne mit dem Schreiben!"
