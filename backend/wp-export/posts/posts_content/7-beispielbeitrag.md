@@ -1,1 +1,0 @@
-"---\ntitle:      [object Object]\nslug:       beispielbeitrag\ndate:       2022-11-16T16:30:07.000Z\nstatus:     publish\npublished:  2022-11-16T16:30:07.000Z\n---\n\n![](http://127.0.0.1:8080/wp-content/uploads/2022/11/ghost.gif)\n\nABCDEFGHIJKLOMNOP\n\nÜBERSCHRIFT\n-----------"
