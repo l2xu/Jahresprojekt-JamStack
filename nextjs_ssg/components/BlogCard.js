@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/BlogCard.module.css";
 import Link from "next/link.js";
-import { dateParser } from "./utilFunctions";
+import { dateParser } from "./UtilFunctions";
 
 const BlogCard = ({ post }) => {
   const imageUrl =

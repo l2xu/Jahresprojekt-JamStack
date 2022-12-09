@@ -1,7 +1,6 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Index.module.css";
 import Link from "next/link";
-import { dateParser } from "../components/utilFunctions.js";
 import BlogCard from "../components/BlogCard";
 
 export const getStaticProps = async () => {

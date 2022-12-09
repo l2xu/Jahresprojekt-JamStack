@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
     }
   */
 
+  // TODO: Der Teil muss eine eigene Component werden ;)
   // When the user clicks on the button, scroll to the top of the document
   function topFunction() {
     document.body.scrollTop = 0; // For Safari
@@ -21,6 +22,7 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <Component {...pageProps} />
       <Footer />
+      // TODO: Der Teil muss eine eigene Component werden ;)
       <img
         id="btn_totop"
         src="/next (1).png"

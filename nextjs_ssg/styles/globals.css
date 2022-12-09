@@ -1,11 +1,11 @@
 
 :root{
-
+  --col-white: rgb(220, 220, 220);
+  --col-black: rgb(17, 17, 17);
 }
 
 html,
 body {
-  
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
@@ -16,8 +16,6 @@ body {
 h1, h2, h3, h4{
   margin: 0;
 }
-
-
 
 a {
   color: inherit;
@@ -30,13 +28,17 @@ a {
 
 .wrapper{
   --max-width: 960px;
-  --padding: 1rem;
+  --padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 }
 
 
+
+/* TODO: Der Teil muss in eine eigene Component mit eigenem CSS Module verwandelt werden ;) */
 .btn_scroll {
  
   float: right;
@@ -47,7 +49,7 @@ a {
   position: fixed;
   bottom: 50px;
   right: 50px;
- opacity: 50%;
+  opacity: 50%;
 }
 
 .btn_scroll:hover {

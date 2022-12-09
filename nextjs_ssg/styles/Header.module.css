@@ -1,11 +1,12 @@
 .header{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 .logo{
-    margin: 12px 0 8px;
-    width: 200px;
+    width: 150px;
 }
 
 .hs{
@@ -15,4 +16,25 @@
 .searchbox{
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (min-width: 680px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    flex-direction: row;
+
+    }
+
+    .logo{
+        width: 100px;
+    }
+}
+  
+  
+@media only screen and (min-width: 960px) {
+    .logo{
+        width: 150px;
+    }
 }
