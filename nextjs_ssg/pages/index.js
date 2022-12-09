@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import { dateParser } from "../components/utilFunctions.js";
+import BlogCard from "../components/BlogCard";
 
 export const getStaticProps = async () => {
   const token =
@@ -26,6 +28,7 @@ export const getStaticProps = async () => {
 export default function Home({ posts }) {
   console.log(posts);
   console.log(posts[0].attributes.Titelbild.data[0].attributes.url);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -38,28 +41,11 @@ export default function Home({ posts }) {
         <img src="/minff.jpg" width="100%" />
 
         <div className={styles.card_container}>
-          {posts.map((post) => {
-            const imageUrl =
-              "url('http://194.95.193.79:1337" +
-              post.attributes.Titelbild.data[0].attributes.url +
-              "')";
-
-            return (
-              <Link href={"/" + post.id} key={post.id}>
-                <div
-                  className={styles.posts}
-                  style={{
-                    backgroundImage: imageUrl,
-                    backgroundSize: "cover",
-                  }}>
-                  <div className={styles.bottomContainer}>
-                    <h3>{post.attributes.Titel}</h3>
-                    <span>{post.attributes.publishedAt}</span>
-                  </div>
-                </div>
-              </Link>
-            );
-          })}
+          {posts.map((post) => (
+            <Link href={"/" + post.id} key={post.id}>
+              <BlogCard post={post} />
+            </Link>
+          ))}
         </div>
       </main>
     </div>
