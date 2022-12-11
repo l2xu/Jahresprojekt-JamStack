@@ -51,15 +51,15 @@ export default function Home({ posts, error }) {
 
         <main className={styles.main}>
           <img src="/minff.jpg" width="100%" />
+          <ImageSlider
+            image1="/imageSlider/exma.png"
+            image2="/imageSlider/poster.png"
+          />
 
           <div className={styles.card_container}>
             {posts.map((post) => (
               <Link href={"/" + post.id} key={post.id}>
                 <BlogCard post={post} />
-                <ImageSlider
-                  image1="/imageSlider/exma.png"
-                  image2="/imageSlider/poster.png"
-                />
               </Link>
             ))}
           </div>
@@ -77,7 +77,6 @@ export default function Home({ posts, error }) {
 
         <main className={styles.main}>
           <img src="/minff.jpg" width="100%" />
-          <ImageSlider post={post} />
           <span className={styles.error}>
             Leider konnte keine Verbindung zur Datenbank aufgebaut werden...
           </span>
