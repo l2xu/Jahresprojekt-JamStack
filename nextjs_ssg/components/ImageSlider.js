@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "../styles/ImageSlider.module.css";
 
 const ImageSlider = ({ image1, image2 }) => {
+// Test
   // let slideIndex = 1;
   // showSlides(slideIndex);
 
