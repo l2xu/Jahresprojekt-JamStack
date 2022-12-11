@@ -6,7 +6,6 @@ import image from "next/image";
 import ImageSlider from "../components/ImageSlider";
 import ImageSliderFunction from "../components/ImageSliderFunction";
 
-
 export const getStaticProps = async () => {
   const token =
     "ef7b5769772f2edfc916bf362fab95267ebd3b3e3c730d86c81a72030b1e587d8cb192441dbda7079449e837a0d56ee95c6e030d8a4ea0519184f9e464409cb58a67d30197154b2cf5cf1003bfb713387b8ac631a93272fed98a80f333eb1d02b85ea6469fc0792b32db3b3a3525f4700da5f7229ef6215cd0c8a72ec7e5a20c";
@@ -52,12 +51,15 @@ export default function Home({ posts, error }) {
 
         <main className={styles.main}>
           <img src="/minff.jpg" width="100%" />
-          <ImageSlider post={post} />
-          <ImageSliderFunction post={post} />
+
           <div className={styles.card_container}>
             {posts.map((post) => (
               <Link href={"/" + post.id} key={post.id}>
                 <BlogCard post={post} />
+                <ImageSlider
+                  image1="/imageSlider/exma.png"
+                  image2="/imageSlider/poster.png"
+                />
               </Link>
             ))}
           </div>
