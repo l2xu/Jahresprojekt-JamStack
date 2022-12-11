@@ -2,6 +2,9 @@ import Head from "next/head";
 import styles from "../styles/Index.module.css";
 import Link from "next/link";
 import BlogCard from "../components/BlogCard";
+import image from "next/image";
+import ImageSlider from "../components/ImageSlider";
+import ImageSliderFunction from "../components/ImageSliderFunction";
 
 
 export const getStaticProps = async () => {
@@ -49,7 +52,8 @@ export default function Home({ posts, error }) {
 
         <main className={styles.main}>
           <img src="/minff.jpg" width="100%" />
-
+          <ImageSlider post={post} />
+          <ImageSliderFunction post={post} />
           <div className={styles.card_container}>
             {posts.map((post) => (
               <Link href={"/" + post.id} key={post.id}>
@@ -71,6 +75,7 @@ export default function Home({ posts, error }) {
 
         <main className={styles.main}>
           <img src="/minff.jpg" width="100%" />
+          <ImageSlider post={post} />
           <span className={styles.error}>
             Leider konnte keine Verbindung zur Datenbank aufgebaut werden...
           </span>
