@@ -2,9 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Index.module.css";
 import Link from "next/link";
 import BlogCard from "../components/BlogCard";
-import image from "next/image";
 import ImageSlider from "../components/ImageSlider";
-import ImageSliderFunction from "../components/ImageSliderFunction";
 
 export const getStaticProps = async () => {
   const token =
@@ -50,7 +48,7 @@ export default function Home({ posts, error }) {
         </Head>
 
         <main className={styles.main}>
-          <img src="/minff.jpg" width="100%" />
+          <span>Hier kommt der Image slider hin ;D</span>
           <ImageSlider
             image1="/imageSlider/exma.png"
             image2="/imageSlider/poster.png"
@@ -66,7 +64,9 @@ export default function Home({ posts, error }) {
         </main>
       </div>
     );
-  } else {
+  }
+  //Hier wird der Fehlerfall abgefangen
+  else {
     return (
       <div className={styles.container}>
         <Head>
@@ -76,7 +76,6 @@ export default function Home({ posts, error }) {
         </Head>
 
         <main className={styles.main}>
-          <img src="/minff.jpg" width="100%" />
           <span className={styles.error}>
             Leider konnte keine Verbindung zur Datenbank aufgebaut werden...
           </span>
