@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const ImageSlider = ({ image1, image2 }) => {
-// Test
+// Test123
   // let slideIndex = 1;
   // showSlides(slideIndex);
 
