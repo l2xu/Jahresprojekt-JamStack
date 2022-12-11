@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Index.module.css";
 import Link from "next/link";
 import BlogCard from "../components/BlogCard";
+import Image
 
 export const getStaticProps = async () => {
   const token =
