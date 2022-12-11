@@ -1,39 +1,39 @@
 
 .slider{
 	max-width: 700px;
-	border:10px solid  #29a8e2;
+	border:10px solid  #8e8e8e;
 	margin:80px auto;
 	position: relative;
 	overflow: hidden;
 }
 
-.slider .left-slide,.slider .right-slide{
+.slider .leftslide,.slider .rightslide{
   position: absolute;
   height: 40px;
   width: 40px;
-  background-color: #444444;
+  background-color: #707070;
   border-radius: 50%;
   color:#ffffff;
-  font-size: 20px;
+  font-size: 25px;
   top:50%;
   cursor: pointer;
   margin-top: -20px;
   text-align: center;
-  line-height: 40px;
+
   
 }
-.slider .left-slide:hover,.slider .right-slide:hover{
+.slider .leftslide:hover,.slider .rightslide:hover{
  box-shadow: 0px 0px 10px black;
- background-color: #29a8e2;
+ background-color: #060606;
 }
 
-.slider .left-slide{
+.slider .leftslide{
 	left: 30px;
 }
-.slider .right-slide{
+.slider .rightslide{
 	right: 30px;
 }
-.slider .slider-items .item img{
+.slider .slider_items .item img{
 	max-width: 100%;
 	display: block;
 	animation:zoom 1s ease;
@@ -64,6 +64,10 @@ font-size: 30px;
 
 .slider .slider-items .item.active{
 	display: block;
+}
+
+.item.active{
+  display: block;
 }
 
 

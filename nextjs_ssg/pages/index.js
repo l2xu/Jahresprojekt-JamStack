@@ -52,6 +52,7 @@ export default function Home({ posts, error }) {
           <ImageSlider
             image1="/imageSlider/exma.png"
             image2="/imageSlider/poster.png"
+            image3="/imageSlider/fextra.png"
           />
 
           <div className={styles.card_container}>

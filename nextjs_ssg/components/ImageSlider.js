@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../styles/ImageSlider.module.css";
-
 const ImageSlider = ({ image1, image2, image3 }) => {
  
   // let slideIndex = 1;
@@ -40,30 +39,35 @@ const ImageSlider = ({ image1, image2, image3 }) => {
   return (
     <>
 
-    <div className="slider">
-      <div className="slider-items">
-        <div className="item">
-          <Image src={image1} width="300" height="200"/>
+    <div className={styles.slider}>
+      <div className={styles.slider_items}>
+        <div className={styles.slider.active}>
+          <Image src={image1} width="942" height="470"/>
           <div className="caption">
             Slide 1
           </div>
         </div>
         <div className="item">
-          <Image src={image2} width="300" height="200"/>
+          <Image src={image2} width="942" height="470"/>
           <div className="caption">
             Slide 2
           </div>
         </div>
         <div className="item">
-          <Image src={image3} width="300" height="200"/>
+          <Image src={image3} width="942" height="470"/>
           <div className="caption">
             Slide 3
           </div>
         </div>
       </div>
+
+      <div className={styles.leftslide}>{'<'}</div>
+      <div className={styles.rightslide}>{'>'}</div>
+
+
     </div>
 
-
+      <script src="ImageSliderFunction.js" ></script>
 
 
 
