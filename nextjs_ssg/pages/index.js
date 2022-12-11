@@ -71,7 +71,7 @@ export default function Home({ posts, error }) {
         <main className={styles.main}>
           <img src="/minff.jpg" width="100%" />
           <span className={styles.error}>
-            Leider konnte keine Verbindung zur Datenbank aufebaut werden...
+            Leider konnte keine Verbindung zur Datenbank aufgebaut werden...
           </span>
         </main>
       </div>
