@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import styles from "../styles/ImageSlider.module.css";
 
-const ImageSlider = ({ image1, image2 }) => {
-  // Test123
+const ImageSlider = ({ image1, image2, image3 }) => {
+ 
   // let slideIndex = 1;
   // showSlides(slideIndex);
 
@@ -38,8 +39,35 @@ const ImageSlider = ({ image1, image2 }) => {
 
   return (
     <>
-      <Image src={image1} width="100" height="100" />
-      <Image src={image2} width="100" height="100" />
+
+    <div className="slider">
+      <div className="slider-items">
+        <div className="item">
+          <Image src={image1} width="300" height="200"/>
+          <div className="caption">
+            Slide 1
+          </div>
+        </div>
+        <div className="item">
+          <Image src={image2} width="300" height="200"/>
+          <div className="caption">
+            Slide 2
+          </div>
+        </div>
+        <div className="item">
+          <Image src={image3} width="300" height="200"/>
+          <div className="caption">
+            Slide 3
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
       {/* <div className="slideshow-container">
         <div className="mySlidesfade">
           <Image src="/ImageSlider/exma.png" width="100" height="100" />
