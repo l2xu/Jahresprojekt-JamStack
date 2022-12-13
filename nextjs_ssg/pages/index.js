@@ -3,6 +3,7 @@ import styles from "../styles/Index.module.css";
 import Link from "next/link";
 import BlogCard from "../components/BlogCard";
 import ImageSlider from "../components/ImageSlider";
+import Category from "../components/Category";
 
 export const getStaticProps = async () => {
   const token =
