@@ -54,6 +54,7 @@ export default function Home({ posts, error }) {
             image2="/imageSlider/poster.png"
             image3="/imageSlider/fextra.png"
           />
+          <Category></Category>
 
           <div className={styles.card_container}>
             {posts.map((post) => (
