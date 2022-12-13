@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <Component {...pageProps} />
       <Footer />
-      // TODO: Der Teil muss eine eigene Component werden ;)
+      {/* // TODO: Der Teil muss eine eigene Component werden ;) */}
       <img
         id="btn_totop"
         src="/next (1).png"

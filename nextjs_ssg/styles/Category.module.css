@@ -8,8 +8,14 @@
 
 .flex {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-bottom: 18px;
+  gap: 2rem;
+}
+
+.container{
+  width: 50%;
+
 }
 
 .flex img {
@@ -41,4 +47,7 @@
   border-left: 0;
   border-right: 0;
   padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
