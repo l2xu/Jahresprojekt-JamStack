@@ -1,0 +1,44 @@
+
+ 
+@media only screen and (min-width: 960px) {
+  .logo {
+    width: 150px;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.flex img {
+  margin:10px;
+}
+
+.grid-container {
+  display: grid;
+  column-gap: 50px;
+}
+
+.categories_heading {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.categories_heading i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 16px;
+}
+
+.icon_projects {background-color: #e73252;}
+.icon_blog {background-color: #80b0a4;}
+
+.categories {
+  border: 1px solid black;
+  border-left: 0;
+  border-right: 0;
+  padding: 10px 0;
+}
