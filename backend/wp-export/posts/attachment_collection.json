@@ -1,0 +1,48 @@
+[
+  {
+    "id": 8,
+    "parentId": 7,
+    "title": {
+      "__cdata": "ghost"
+    },
+    "slug": "ghost",
+    "link": "http://127.0.0.1:8080/?attachment_id=8",
+    "guid": "http://127.0.0.1:8080/wp-content/uploads/2022/11/ghost.gif",
+    "status": "inherit",
+    "postDate": "2022-11-16T16:28:52.000Z",
+    "pubDate": "2022-11-16T16:28:52.000Z",
+    "creator": "admin",
+    "creatorId": null,
+    "markdown": null,
+    "urls": [],
+    "encodedContent": "",
+    "encodedExcerpt": "",
+    "attachmentUrl": "http://127.0.0.1:8080/wp-content/uploads/2022/11/ghost.gif",
+    "categoryIds": [],
+    "tagIds": [],
+    "comments": null
+  },
+  {
+    "id": 9,
+    "parentId": 7,
+    "title": {
+      "__cdata": "Nature Background Illustration Landscape Wallpaper"
+    },
+    "slug": "nature-background-illustration-landscape-wallpaper",
+    "link": "http://127.0.0.1:8080/?attachment_id=9",
+    "guid": "http://127.0.0.1:8080/wp-content/uploads/2022/11/Nature-Background-Illustration-Landscape-Wallpaper-5355611.jpg",
+    "status": "inherit",
+    "postDate": "2022-11-16T16:29:24.000Z",
+    "pubDate": "2022-11-16T16:29:24.000Z",
+    "creator": "admin",
+    "creatorId": null,
+    "markdown": null,
+    "urls": [],
+    "encodedContent": "",
+    "encodedExcerpt": "Nature Background Illustration Landscape Wallpaper",
+    "attachmentUrl": "http://127.0.0.1:8080/wp-content/uploads/2022/11/Nature-Background-Illustration-Landscape-Wallpaper-5355611.jpg",
+    "categoryIds": [],
+    "tagIds": [],
+    "comments": null
+  }
+]

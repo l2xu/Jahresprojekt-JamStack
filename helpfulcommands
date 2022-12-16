@@ -1,0 +1,7 @@
+cd C:\users\elli\Documents\Uni-Programmierung\jamstackstrapitest\backend && npm install
+to start the strapi server : npm run develop
+export xml to json: npm run wp-export-to-json
+
+yarn strapi admin:reset-user-password --email="elliseemann22@gmail.com" --password="Admin123456!"
+
+(commands only working in admin powershell)

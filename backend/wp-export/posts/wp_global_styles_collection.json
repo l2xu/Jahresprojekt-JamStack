@@ -1,0 +1,24 @@
+[
+  {
+    "id": 6,
+    "parentId": 0,
+    "title": {
+      "__cdata": "Custom Styles"
+    },
+    "slug": "wp-global-styles-twentytwentythree",
+    "link": "http://127.0.0.1:8080/?p=6",
+    "guid": "http://127.0.0.1:8080/?p=6",
+    "status": "publish",
+    "postDate": "2022-11-16T16:28:35.000Z",
+    "pubDate": "2022-11-16T16:28:35.000Z",
+    "creator": "admin",
+    "creatorId": null,
+    "markdown": "{\"version\": 2, \"isGlobalStylesUserThemeJSON\": true }",
+    "urls": [],
+    "encodedContent": "{\"version\": 2, \"isGlobalStylesUserThemeJSON\": true }",
+    "encodedExcerpt": "",
+    "categoryIds": [],
+    "tagIds": [],
+    "comments": null
+  }
+]

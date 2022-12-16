@@ -1,0 +1,52 @@
+{
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@strapi/plugin-graphql": "^4.0.0",
+    "@strapi/plugin-i18n": "4.5.0",
+    "@strapi/plugin-users-permissions": "4.5.0",
+    "@strapi/strapi": "4.5.0",
+    "axios": "^0.19.2",
+    "better-sqlite3": "7.4.6",
+    "dotenv": "^8.2.0",
+    "escape-string-regexp": "^4.0.0",
+    "fast-xml-parser": "^3.16.0",
+    "form-data": "^3.0.0",
+    "he": "^1.2.0",
+    "html-urls": "^2.4.11",
+    "image-downloader": "^3.5.0",
+    "is-image-url": "^1.1.8",
+    "lodash.get": "^4.4.2",
+    "lodash.replace": "^4.1.4",
+    "lodash.set": "^4.3.2",
+    "mime-types": "^2.1.27",
+    "moment": "^2.25.3",
+    "needle": "^2.4.1",
+    "turndown": "^6.0.0",
+    "xmlserializer": "^0.6.1"
+  },
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "wp-export-to-json": "node ./wp-export-to-json.js",
+    "wp-json-to-strapi": "node ./wp-json-to-strapi.js"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "1ee59322-4a44-4140-9c8c-9ea849f4eac5",
+    "template": "@strapi/template-blog@^1.0.0",
+    "starter": "@strapi/starter-next-blog"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
