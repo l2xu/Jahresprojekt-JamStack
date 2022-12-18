@@ -47,7 +47,7 @@ const ImageSlider = ({ image1, image2, image3 }) => {
             Slide 1
           </div>
         </div>
-        <div className="item">
+        {/* <div className="item">
           <Image src={image2} width="942" height="470"/>
           <div className="caption">
             Slide 2
@@ -58,7 +58,7 @@ const ImageSlider = ({ image1, image2, image3 }) => {
           <div className="caption">
             Slide 3
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className={styles.leftslide}>{'<'}</div>
