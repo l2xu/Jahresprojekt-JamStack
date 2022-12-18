@@ -44,7 +44,7 @@ const ImageSlider = ({ image1, image2, image3 }) => {
         <div className={styles.slider.active}>
           <Image src={image1} width="942" height="470"/>
           <div className="caption">
-            Slide 1
+            Feierliche Exmatrikulation
           </div>
         </div>
         {/* <div className="item">
