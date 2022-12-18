@@ -18,11 +18,23 @@ export const getStaticProps = async () => {
         }),
       }
     );
+
+    const catres = await fetch(
+      "http://194.95.193.79:1337/api/categories?populate=*",
+      {
+        headers: new Headers({
+          Authorization: `Bearer ${token}`,
+        }),
+      }
+    );
+
+    const fetchedCats = await catres.json();
     const fetchedData = await res.json();
 
     return {
       props: {
         posts: fetchedData.data,
+        cats: fetchedCats.data,
         error: false,
       },
       revalidate: 10,
@@ -31,6 +43,7 @@ export const getStaticProps = async () => {
     console.error(e);
     return {
       props: {
+        cats: "Kategorien konnten nicht geladen werden.",
         posts: "Beim Laden der Daten ist ein Fehler aufgetreten.",
         error: true,
       },
@@ -38,7 +51,8 @@ export const getStaticProps = async () => {
   }
 };
 
-export default function Home({ posts, error }) {
+export default function Home({ posts, error, cats }) {
+  //console.log(cats);
   if (!error) {
     return (
       <div className={styles.container}>
@@ -55,14 +69,15 @@ export default function Home({ posts, error }) {
             image2="/imageSlider/poster.png"
             image3="/imageSlider/fextra.png"
           />
-          <Category />
+          <Category categories={cats}/>
 
           <div className={styles.card_container}>
             {posts.map((post) => (
               <Link href={"/" + post.id} key={post.id}>
-                <BlogCard post={post} />
+                <BlogCard post={post} categories={cats}/>
               </Link>
-            ))}
+            )
+            )}
           </div>
         </main>
       </div>
