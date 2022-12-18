@@ -3,6 +3,7 @@ import styles from "../styles/Index.module.css";
 import Link from "next/link";
 import BlogCard from "../components/BlogCard";
 import ImageSlider from "../components/ImageSlider";
+import Category from "../components/Category";
 
 export const getStaticProps = async () => {
   const token =
@@ -54,6 +55,7 @@ export default function Home({ posts, error }) {
             image2="/imageSlider/poster.png"
             image3="/imageSlider/fextra.png"
           />
+          <Category />
 
           <div className={styles.card_container}>
             {posts.map((post) => (
