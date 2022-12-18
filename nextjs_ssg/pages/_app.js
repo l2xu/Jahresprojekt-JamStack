@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Category from "../components/Category";
 
 function MyApp({ Component, pageProps }) {
   /* if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

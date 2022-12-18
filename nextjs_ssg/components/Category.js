@@ -3,7 +3,23 @@ import Image from "next/image";
 import styles from "../styles/Category.module.css";
 import Link from "next/link.js";
 
-const Category = () => {
+const Category = ({categories}) => {
+
+  //console.log(categories);
+
+  const blogs = [];
+  const projects = [];
+
+categories.forEach(function(each){
+  if (each.attributes.blog === true) {
+    blogs.push(each);
+    return;
+  }else{
+    projects.push(each);
+    return;
+  }
+});
+
   return (
     <div className={styles.flex}>
       <div className={styles.container}>
@@ -13,13 +29,12 @@ const Category = () => {
           </a>
         </div>
         <div className={styles.categories}>
-          <img src="/category_icons/world-wide-web 2.png" alt="" />
-          <img src="/category_icons/web-development.png" alt="" />
-          <img src="/category_icons/bleistift-und-lineal 2.png" alt="" />
-          <img src="/category_icons/kamera.png" alt="" />
-          <img src="/category_icons/filmkamera.png" alt="" />
-          <img src="/category_icons/konsole 2.png" alt="" />
-          <img src="/category_icons/animation 3.png" alt="" />
+          {projects.map((cat) => (
+              <h3 key={cat.id}>
+              <img src = {dateParser(cat.attributes.Bild.data.attributes.url)} title = {cat.attributes.Name}/>
+            </h3> 
+          )
+            )}
         </div>
       </div>
       <div className={styles.container}>
@@ -29,17 +44,23 @@ const Category = () => {
           </a>
         </div>
         <div className={styles.categories}>
-          <img src="/category_icons/bleichen.png" alt="" />
-          <img src="/category_icons/wecker 2.png" alt="" />
-          <img src="/category_icons/buch 2.png" alt="" />
-          <img src="/category_icons/kommunikation.png" alt="" />
-          <img src="/category_icons/krawatte 2.png" alt="" />
-          <img src="/category_icons/puzzle 2.png" alt="" />
-          <img src="/category_icons/puzzle 2.png" alt="" />
+        {blogs.map((cat) => (
+              <h3 key={cat.id}>
+              <img src = {dateParser(cat.attributes.Bild.data.attributes.url)} title = {cat.attributes.Name}/>
+            </h3> 
+          )
+            )}
         </div>
       </div>
     </div>
+
   );
 };
+
+export function dateParser(url) {
+  const imageUrl =
+  "http://194.95.193.79:1337" + url + "";
+  return imageUrl;
+}
 
 export default Category;
